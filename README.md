@@ -6,8 +6,8 @@ A simple tool usable only in the cmd that automatically organizes your files int
 
 1. Download the file `Setup_FileOrganiser.exe`.
 2. Run the installer.
-3. Choose a folder (default: `C:\Program Files\file-organiser`) and **install**.
-4. If you unchecked the `Add to Path` option during installation, you will need to **add** the installation path (default: `C:\Program Files\file-organiser`) in the **system environment variables** under the **Path** section (Tutorial in the next section).
+3. Choose a folder (default: `C:\Program Files (x86)\file-organiser`) and **install**.
+4. If you unchecked the `Add to Path` option during installation, you will need to **add** the installation path (default: `C:\Program Files (x86)\file-organiser`) in the **system environment variables** under the **Path** section (Tutorial in the next section).
 
 ##### ⚙️ How do I add file-organiser to the Path?
 > 1. Press `Win + R`to open the "**Run**" window.
