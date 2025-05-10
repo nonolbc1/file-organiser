@@ -20,7 +20,7 @@ Replace `<path>` with the folder you want to organize.
 
 All default categories will be used: images, documents, videos, music, archives.
 
-####🔹 With Specific Categories
+#### 🔹 With Specific Categories
 ```bash
 file-organiser <path> --categories <category1> <category2> ...
 ```
@@ -31,7 +31,7 @@ You can choose which categories to organize by adding --categories followed by o
 - music
 - archives
 
-####💡 Examples
+#### 💡 Examples
 Organize everything in the Downloads folder:
 ```bash
 file-organiser "C:\Users\YourName\Downloads"
