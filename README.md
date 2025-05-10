@@ -41,3 +41,5 @@ Only organize images and documents:
 ```bash
 file-organiser "C:\Users\YourName\Downloads" --categories images documents
 ```
+
+📘 Read this in other languages: [Français](README.fr.md) | [English](README.md)
