@@ -8,14 +8,14 @@ Un outil simple, utilisable uniquement via le terminal (cmd), qui organise autom
 2. Lancez l’installateur.
 3. Choisissez un dossier (par défaut : `C:\Program Files\file-organiser`) et installez.
 4. Si vous avez décoché `Add to Path`, vous devrez ajouter le chemin d'installation (par défaut: `C:\Program Files\file-organiser`) dans les variables d'environnement système, sous la section Path:
-###   > Comment l'ajouter dans le Path
-      1. Appuyez sur `Win + R` pour ouvrir la fenêtre "Exécuter"
-      2. Tapez `sysdm.cpl` et appuyez sur **Entrée**. Cela ouvrira la fenêtre des propriétés système.
-      3. Allez dans l'onglet **Paramètres système avancés**.
-      4. Cliquez sur **Variables d'environnement** en bas de la fenêtre.
-      5. Dans la section **Variables système**, trouvez et sélectionnez la variable **Path**, puis cliquez sur **Modifier**.
-      6. Ajoutez `C:\Program Files\file-organiser` à la liste des valeurs de **Path**.
-      7. Cliquez sur **OK** pour fermer toutes les fenêtres.
+### > Comment l'ajouter dans le Path
+    1. Appuyez sur `Win + R` pour ouvrir la fenêtre "Exécuter"
+    2. Tapez `sysdm.cpl` et appuyez sur **Entrée**. Cela ouvrira la fenêtre des propriétés système.
+    3. Allez dans l'onglet **Paramètres système avancés**.
+    4. Cliquez sur **Variables d'environnement** en bas de la fenêtre.
+    5. Dans la section **Variables système**, trouvez et sélectionnez la variable **Path**, puis cliquez sur **Modifier**.
+    6. Ajoutez `C:\Program Files\file-organiser` à la liste des valeurs de **Path**.
+    7. Cliquez sur **OK** pour fermer toutes les fenêtres.
 
 ### 📦 Utilisation
 
