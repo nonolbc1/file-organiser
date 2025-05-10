@@ -7,9 +7,9 @@ Un outil simple, utilisable uniquement via le terminal (cmd), qui organise autom
 1. Téléchargez le fichier `Setup_FileOrganiser.exe`.
 2. Lancez l’installateur.
 3. Choisissez un dossier (par défaut : `C:\Program Files\file-organiser`) et installez.
-4. Si vous avez décoché l'option "Add to Path" lors de l'installation, vous devrez ajouter le chemin d'installation (par défaut : C:\Program Files\file-organiser) dans les variables d'environnement système, sous la section Path.
-Voici comment faire :
+4. Si vous avez décoché l'option "Add to Path" lors de l'installation, vous devrez ajouter le chemin d'installation (par défaut : C:\Program Files\file-organiser) dans les variables d'environnement système, sous la section Path (Tutoriel dans la section suivante).
 
+#### ⚙️ Comment ajouter file-organiser au Path ?
 > 1. Appuyez sur `Win + R` pour ouvrir la fenêtre "**Exécuter**".
 > 2. Tapez `sysdm.cpl` et appuyez sur **Entrée**. Cela ouvrira la fenêtre des propriétés système.
 > 3. Allez dans l'onglet **Paramètres système avancés**.
