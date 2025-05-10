@@ -15,7 +15,7 @@ A simple tool usable only in the cmd that automatically organizes your files int
 > 3. Go to the tab **Advanced system settings**.
 > 4. Click **Environment Variables** at the bottom of the window.
 > 5. In the **System Variables** section, find and select the **Path** variable, then click on **Edit**.
-> 6. Add the installation path (default: ‘C: Program Files file-organiser’) to the **Path** value list.
+> 6. Add the installation path (default: `C:\Program Files (x86)\file-organiser`) to the **Path** value list.
 
 ### 📦 How to Use
 
