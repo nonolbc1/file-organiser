@@ -5,7 +5,7 @@ A simple tool usable only in the cmd that automatically organizes your files int
 ## 📦 Installation
 
 1. Download the file `Setup_FileOrganiser.exe`.
-2. 2. Run the installer.
+2. Run the installer.
 3. Choose a folder (default: C:\Program Files\file-organiser) and install.
 
 ### 📦 How to Use
