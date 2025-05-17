@@ -1,21 +1,21 @@
 # File Organiser - EN
 
-A simple tool, usable only through the terminal (cmd), that automatically organizes your files into folders based on their type (images, documents, music, etc.).
+A simple command-line tool that automatically organizes your files into folders based on their type (images, documents, music, etc.).
 
 ## 📦 Installation
 
-1. Download the `Setup_FileOrganiser.exe` file.
+1. Download `Setup_FileOrganiser.exe`.
 2. Launch the installer.
-3. Choose a folder (default: `C:\Program Files (x86)\file-organiser`) and **install**.
-4. If you unchecked the `Add to Path` option during installation, you will need to **add** the installation path (default: `C:\Program Files (x86)\file-organiser`) to the system **environment variables**, under the **Path** section (see next section for tutorial).
+3. Choose an install path (default: `C:\Users\YourName\AppData\Local\file-organizer`) and **install**.
+4. If you unchecked `Add to Path` during installation, you must manually **add the install path** (default: `C:\Users\YourName\AppData\Local\file-organizer`) to your system environment **Path** variable (see below).
 
 #### ⚙️ How to add file-organiser to Path?
-> 1. Press `Win + R` to open the "**Run**" window.  
-> 2. Type `sysdm.cpl` and press **Enter**. This opens the system properties window.  
+> 1. Press `Win + R` to open the "**Run**" dialog.  
+> 2. Type `sysdm.cpl` and press **Enter**.  
 > 3. Go to the **Advanced system settings** tab.  
-> 4. Click on **Environment Variables** at the bottom.  
-> 5. Under **System Variables**, find and select **Path**, then click **Edit**.  
-> 6. Add the install path (default: `C:\Program Files (x86)\file-organiser`) to the list.  
+> 4. Click **Environment Variables**.  
+> 5. Under **System variables**, find and select **Path**, then click **Edit**.  
+> 6. Add the installation path (default: `C:\Users\YourName\AppData\Local\file-organizer`).  
 > 7. Click **OK** and close all windows.
 
 ### 📦 Usage
@@ -26,33 +26,56 @@ A simple tool, usable only through the terminal (cmd), that automatically organi
 file-organiser <path>
 ```
 
-Replace `<path>` with the folder you want to organize.
+Organizes all files in the given folder using default categories: images, documents, videos, music, archives.
 
-All default categories will be used: images, documents, videos, music, archives.
-
-#### 🔹 With specific categories
+#### 🔹 Use specific categories
 
 ```bash
 file-organiser <path> --categories <category1> <category2> ...
 ```
 
-You can choose which categories to organize by adding `--categories` followed by one or more of the following:
-- images
-- documents
-- videos
-- music
-- archives
+#### 🔹 Add extensions to a category
+
+```bash
+file-organiser --add <category> .ext1 .ext2 ...
+```
+
+Adds new extensions to a category or creates it if it doesn't exist.
+
+#### 🔹 Remove extensions or entire category
+
+```bash
+file-organiser --remove <category> [.ext1 .ext2 ...]
+```
+
+- If **no extensions are provided**, the **whole category is removed**.
+- If extensions are given, only those are removed **if they exist**.
 
 #### 💡 Examples
 
-Organize everything in the Downloads folder:
+Organize everything in Downloads:
 ```bash
 file-organiser "C:\Users\YourName\Downloads"
 ```
 
-Organize only images and documents:
+Only organize images and documents:
 ```bash
 file-organiser "C:\Users\YourName\Downloads" --categories images documents
+```
+
+Add `.psd` to the images category:
+```bash
+file-organiser --add images .psd
+```
+
+Remove `.psd` from the images category:
+```bash
+file-organiser --remove images .psd
+```
+
+Remove the entire "archives" category:
+```bash
+file-organiser --remove archives
 ```
 
 📘 Read this in another language: [Français](README.fr.md) | [English](README.md)
