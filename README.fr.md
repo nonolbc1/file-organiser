@@ -22,37 +22,60 @@ Un outil simple, utilisable uniquement via le terminal (cmd), qui organise autom
 
 #### 🔹 Utilisation de base
 
-```bash
+``bash
 file-organiser <chemin>
-```
+``
 
-Remplacez `<chemin>` par le dossier que vous souhaitez organiser.
+Organise les fichiers dans les catégories par défaut : images, documents, vidéos, musiques, archives.
 
-Toutes les catégories par défaut seront utilisées : images, documents, vidéos, musiques, archives.
+#### 🔹 Utiliser des catégories spécifiques
 
-#### 🔹 Avec des catégories spécifiques
-
-```bash
+``bash
 file-organiser <chemin> --categories <catégorie1> <catégorie2> ...
-```
+``
 
-Vous pouvez choisir les catégories à organiser en ajoutant `--categories` suivi d’une ou plusieurs des catégories suivantes :
-- images
-- documents
-- videos
-- music
-- archives
+#### 🔹 Ajouter des extensions à une catégorie
+
+``bash
+file-organiser --add <catégorie> .ext1 .ext2 ...
+``
+
+Ajoute des extensions à une catégorie existante, ou crée la catégorie si elle n’existe pas.
+
+#### 🔹 Retirer des extensions ou une catégorie
+
+``bash
+file-organiser --remove <catégorie> [.ext1 .ext2 ...]
+``
+
+- Si vous ne spécifiez **aucune extension**, la **catégorie entière** sera supprimée.
+- Si vous spécifiez une ou plusieurs extensions, elles seront supprimées **seulement si elles existent**.
 
 #### 💡 Exemples
 
-Organiser tout dans le dossier Téléchargements :
-```bash
+Organiser tout dans Téléchargements :
+``bash
 file-organiser "C:\Users\VotreNom\Downloads"
-```
+``
 
-Organiser uniquement les images et documents :
-```bash
+Organiser uniquement images et documents :
+``bash
 file-organiser "C:\Users\VotreNom\Downloads" --categories images documents
-```
+``
 
-📘 Lire cela dans une autre langue : [Français](README.fr.md) | [English](README.md)
+Ajouter `.psd` à la catégorie images :
+``bash
+file-organiser --add images .psd
+``
+
+Retirer `.psd` de la catégorie images :
+``bash
+file-organiser --remove images .psd
+``
+
+Supprimer entièrement la catégorie "archives" :
+``bash
+file-organiser --remove archives
+``
+
+📘 Lire dans une autre langue : [Français](README.fr.md) | [English](README.md)
