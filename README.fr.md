@@ -21,32 +21,28 @@ Un outil simple, utilisable uniquement via le terminal (cmd), qui organise autom
 ### 📦 Utilisation
 
 #### 🔹 Utilisation de base
-
-``bash
+```bash
 file-organiser <chemin>
-``
+```
 
 Organise les fichiers dans les catégories par défaut : images, documents, vidéos, musiques, archives.
 
 #### 🔹 Utiliser des catégories spécifiques
-
-``bash
+```bash
 file-organiser <chemin> --categories <catégorie1> <catégorie2> ...
-``
+```
 
 #### 🔹 Ajouter des extensions à une catégorie
-
-``bash
+```bash
 file-organiser --add <catégorie> .ext1 .ext2 ...
-``
+```
 
 Ajoute des extensions à une catégorie existante, ou crée la catégorie si elle n’existe pas.
 
 #### 🔹 Retirer des extensions ou une catégorie
-
-``bash
+```bash
 file-organiser --remove <catégorie> [.ext1 .ext2 ...]
-``
+```
 
 - Si vous ne spécifiez **aucune extension**, la **catégorie entière** sera supprimée.
 - Si vous spécifiez une ou plusieurs extensions, elles seront supprimées **seulement si elles existent**.
@@ -54,28 +50,28 @@ file-organiser --remove <catégorie> [.ext1 .ext2 ...]
 #### 💡 Exemples
 
 Organiser tout dans Téléchargements :
-``bash
+```bash
 file-organiser "C:\Users\VotreNom\Downloads"
-``
+```
 
 Organiser uniquement images et documents :
-``bash
+```bash
 file-organiser "C:\Users\VotreNom\Downloads" --categories images documents
-``
+```
 
 Ajouter `.psd` à la catégorie images :
-``bash
+```bash
 file-organiser --add images .psd
-``
+```
 
 Retirer `.psd` de la catégorie images :
-``bash
+```bash
 file-organiser --remove images .psd
-``
+```
 
 Supprimer entièrement la catégorie "archives" :
-``bash
+```bash
 file-organiser --remove archives
-``
+```
 
 📘 Lire dans une autre langue : [Français](README.fr.md) | [English](README.md)
