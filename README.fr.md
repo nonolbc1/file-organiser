@@ -1,5 +1,4 @@
 # File Organiser - FR
-
 Un outil simple, utilisable uniquement via le terminal (cmd), qui organise automatiquement vos fichiers dans des dossiers selon leur type (images, documents, musiques, etc.).
 
 ## 📦 Installation
@@ -18,28 +17,27 @@ Un outil simple, utilisable uniquement via le terminal (cmd), qui organise autom
 > 6. Ajoutez le chemin d'installation (par défaut: `C:\Users\VotreNom\AppData\Local\file-organizer`) à la liste des valeurs de **Path**.  
 > 7. Cliquez sur **OK** puis fermez toutes les fenêtres.
 
-### 📦 Utilisation
-
-#### 🔹 Utilisation de base
+## 📦 Utilisation
+### 🔹 Utilisation de base
 ```bash
 file-organiser <chemin>
 ```
 
 Organise les fichiers dans les catégories par défaut : images, documents, vidéos, musiques, archives.
 
-#### 🔹 Utiliser des catégories spécifiques
+### 🔹 Utiliser des catégories spécifiques
 ```bash
 file-organiser <chemin> --categories <catégorie1> <catégorie2> ...
 ```
 
-#### 🔹 Ajouter des extensions à une catégorie
+### 🔹 Ajouter des extensions à une catégorie
 ```bash
 file-organiser --add <catégorie> .ext1 .ext2 ...
 ```
 
 Ajoute des extensions à une catégorie existante, ou crée la catégorie si elle n’existe pas.
 
-#### 🔹 Retirer des extensions ou une catégorie
+### 🔹 Retirer des extensions ou une catégorie
 ```bash
 file-organiser --remove <catégorie> [.ext1 .ext2 ...]
 ```
@@ -47,8 +45,7 @@ file-organiser --remove <catégorie> [.ext1 .ext2 ...]
 - Si vous ne spécifiez **aucune extension**, la **catégorie entière** sera supprimée.
 - Si vous spécifiez une ou plusieurs extensions, elles seront supprimées **seulement si elles existent**.
 
-#### 💡 Exemples
-
+### 💡 Exemples
 Organiser tout dans Téléchargements :
 ```bash
 file-organiser "C:\Users\VotreNom\Downloads"
