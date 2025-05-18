@@ -1,9 +1,8 @@
 # File Organiser - EN
-
 A simple command-line tool that automatically organizes your files into folders based on their type (images, documents, music, etc.).
 
-## 📦 Installation
 
+## 📦 Installation
 1. Download `Setup_FileOrganiser.exe`.
 2. Launch the installer.
 3. Choose an install path (default: `C:\Users\YourName\AppData\Local\file-organizer`) and **install**.
@@ -18,32 +17,28 @@ A simple command-line tool that automatically organizes your files into folders 
 > 6. Add the installation path (default: `C:\Users\YourName\AppData\Local\file-organizer`).  
 > 7. Click **OK** and close all windows.
 
-### 📦 Usage
 
-#### 🔹 Basic usage
-
+## 📦 Usage
+### 🔹 Basic usage
 ```bash
 file-organiser <path>
 ```
 
 Organizes all files in the given folder using default categories: images, documents, videos, music, archives.
 
-#### 🔹 Use specific categories
-
+### 🔹 Use specific categories
 ```bash
 file-organiser <path> --categories <category1> <category2> ...
 ```
 
-#### 🔹 Add extensions to a category
-
+### 🔹 Add extensions to a category
 ```bash
 file-organiser --add <category> .ext1 .ext2 ...
 ```
 
 Adds new extensions to a category or creates it if it doesn't exist.
 
-#### 🔹 Remove extensions or entire category
-
+### 🔹 Remove extensions or entire category
 ```bash
 file-organiser --remove <category> [.ext1 .ext2 ...]
 ```
@@ -51,8 +46,8 @@ file-organiser --remove <category> [.ext1 .ext2 ...]
 - If **no extensions are provided**, the **whole category is removed**.
 - If extensions are given, only those are removed **if they exist**.
 
-#### 💡 Examples
 
+### 💡 Examples
 Organize everything in Downloads:
 ```bash
 file-organiser "C:\Users\YourName\Downloads"
