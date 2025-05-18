@@ -1,8 +1,8 @@
 # File Organiser - FR
 Un outil simple, utilisable uniquement via le terminal (cmd), qui organise automatiquement vos fichiers dans des dossiers selon leur type (images, documents, musiques, etc.).
 
-## 📦 Installation
 
+## 📦 Installation
 1. Téléchargez le fichier `Setup_FileOrganiser.exe`.
 2. Lancez l’installateur.
 3. Choisissez un dossier (par défaut : `C:\Users\VotreNom\AppData\Local\file-organizer`) et **installez**.
@@ -16,6 +16,7 @@ Un outil simple, utilisable uniquement via le terminal (cmd), qui organise autom
 > 5. Dans la section **Variables système**, trouvez et sélectionnez la variable **Path**, puis cliquez sur **Modifier**.  
 > 6. Ajoutez le chemin d'installation (par défaut: `C:\Users\VotreNom\AppData\Local\file-organizer`) à la liste des valeurs de **Path**.  
 > 7. Cliquez sur **OK** puis fermez toutes les fenêtres.
+
 
 ## 📦 Utilisation
 ### 🔹 Utilisation de base
@@ -44,6 +45,7 @@ file-organiser --remove <catégorie> [.ext1 .ext2 ...]
 
 - Si vous ne spécifiez **aucune extension**, la **catégorie entière** sera supprimée.
 - Si vous spécifiez une ou plusieurs extensions, elles seront supprimées **seulement si elles existent**.
+
 
 ### 💡 Exemples
 Organiser tout dans Téléchargements :
